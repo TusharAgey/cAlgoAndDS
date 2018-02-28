@@ -7,7 +7,12 @@ int fib(int fno, int sno, int num){
 	return(fib(sno, fno + sno, num - 1));
 }
 int main(int argc, char *argv[]){
-	printf("0\n1\n");
-	fib(0, 1, atoi(argv[1]) - 2);
+	if(argc == 2){
+		printf("0\n1\n");
+		fib(0, 1, atoi(argv[1]) - 2);
+		return 0;	
+	}
+	printf("Usage: ./a.out total_no_of_values_in_fib_series");
+	return 1;
 }
 
