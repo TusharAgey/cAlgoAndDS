@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
 		fib(0, 1, atoi(argv[1]) - 2);
 		return 0;	
 	}
-	printf("Usage: ./a.out total_no_of_values_in_fib_series");
+	printf("Usage: ./a.out total_no_of_values_in_fib_series\n");
 	return 1;
 }
 
